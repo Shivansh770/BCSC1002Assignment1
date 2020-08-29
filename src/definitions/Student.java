@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Student {
     private String firstName, middleName, lastName;
     private long universityRollNumber;
@@ -84,6 +86,18 @@ public class Student {
         for (int i = 0; i < numberOfBooksIssued; i++) {
             System.out.println(nameOfBooksIssued[i]);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", universityRollNumber=" + universityRollNumber +
+                ", numberOfBooksIssued=" + numberOfBooksIssued +
+                ", nameOfBooksIssued=" + Arrays.toString(nameOfBooksIssued) +
+                '}';
     }
 
 
