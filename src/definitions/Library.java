@@ -9,5 +9,8 @@ package definitions;
 public class Library {
     private Book[] currentlyAvailableBooks;
 
+    public Book[] getCurrentlyAvailableBooks() {
+        return currentlyAvailableBooks;
+    }
 
 }
