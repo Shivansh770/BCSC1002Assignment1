@@ -73,7 +73,8 @@ public class Student {
     }
 
     public void addBook(Book addBook) {
-        System.out.println(addBook.getBookName() + "book is issued . ");
+        nameOfBooksIssued[numberOfBooksIssued] = addBook;
+        numberOfBooksIssued++;
     }
 
     public void deleteBook(int x) {
