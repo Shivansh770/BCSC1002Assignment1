@@ -13,6 +13,10 @@ public class Library {
         this.currentlyAvailableBooks = new Book[5];
     }
 
+    public Library(Book[] aInStore) {
+        this.currentlyAvailableBooks = aInStore;
+    }
+
     public Book[] getCurrentlyAvailableBooks() {
         return currentlyAvailableBooks.clone();
     }
