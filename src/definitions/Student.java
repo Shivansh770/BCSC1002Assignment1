@@ -12,5 +12,28 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] nameOfBooksIssued;
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public Book[] getNameOfBooksIssued() {
+        return nameOfBooksIssued;
+    }
 
 }
