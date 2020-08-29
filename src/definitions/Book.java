@@ -1,7 +1,7 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:49 PM
+ *  User: Shivansh Gupta (Shivansh770)
+ *  Date: 27/08/20
+ *  Time: 4:15 PM
  *  File Name : Book.java
  * */
 package definitions;
@@ -67,3 +67,4 @@ public class Book {
         return Objects.hash(getBookName(), getAuthorName(), getISBN());
     }
 }
+
