@@ -69,4 +69,22 @@ public class Student {
         this.nameOfBooksIssued = nameOfBooksIssued;
     }
 
+    public void addBook(Book addBook) {
+        System.out.println(addBook.getBookName() + "book is issued . ");
+    }
+
+    public void deleteBook(int x) {
+        for (int i = x; i < numberOfBooksIssued; i++) {
+            nameOfBooksIssued[i] = nameOfBooksIssued[i = 1];
+            numberOfBooksIssued--;
+        }
+    }
+
+    public void showMyBooks() {
+        for (int i = 0; i < numberOfBooksIssued; i++) {
+            System.out.println(nameOfBooksIssued[i]);
+        }
+    }
+
+
 }
