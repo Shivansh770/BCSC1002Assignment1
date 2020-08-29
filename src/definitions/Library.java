@@ -34,4 +34,16 @@ public class Library {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Library library = (Library) o;
+        return Arrays.equals(getCurrentlyAvailableBooks(), library.getCurrentlyAvailableBooks());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getCurrentlyAvailableBooks());
+    }
 }
