@@ -15,7 +15,7 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] nameOfBooksIssued;
 
-    public Student(String firstName, String middleName, String lastName, long universityRollNumber, int numberOfBooksIssued) {
+    public Student(String firstName, String middleName, String lastName, long universityRollNumber, int numberOfBooksIssued, Book[] nameOfBooksIssued) {
         this.firstName = firstName;
         this.middleName = middleName;
         this.lastName = lastName;
@@ -72,21 +72,20 @@ public class Student {
         this.nameOfBooksIssued = nameOfBooksIssued;
     }
 
-    public void addBook(Book addBook) {
-        nameOfBooksIssued[numberOfBooksIssued] = addBook;
-        numberOfBooksIssued++;
+    public void addBook(String bookName) {
+        System.out.println("\"" + bookName + "\" is not adden to library.");
     }
 
-    public void deleteBook(int x) {
-        for (int i = x; i < numberOfBooksIssued; i++) {
-            nameOfBooksIssued[i] = nameOfBooksIssued[i = 1];
-            numberOfBooksIssued--;
-        }
+    public void returnPreviouslyIssuedBooks(String bookName) {
+        System.out.println("Thank you for returning \"" + bookName + "\".");
+
     }
 
     public void showMyBooks() {
-        for (int i = 0; i < numberOfBooksIssued; i++) {
-            System.out.println(nameOfBooksIssued[i]);
+        nameOfBooksIssued = new Book[5];
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Book" + (i + 1));
+
         }
     }
 
